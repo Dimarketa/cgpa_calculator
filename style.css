@@ -3,6 +3,11 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+  background-image: url("Images/cgpa.png");
+  backgound-color: rgba(255, 255, 255, 0.3);
+}
+
 #container {
   background-color: white;
   background-size: cover;
