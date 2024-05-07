@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CGPA Calculator</title>
+  <meta name="keywords" content="cgpa, aggregate, result" />
+  <meta name="description" content="CGPA Calculator" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <div id="container">
+    <h1>CGPA Calculator</h1>
+
+    <form action="cgpa_calculator.html" method="get">
+      <fieldset>
+        <legend>Institution Details</legend>
+        <label for="institution">
+          <p>Institution Name</p>
+          <input type="text" required name="institution" id="institution" placeholder="Enter your institution" />
+        </label>
+        <p>Accredited Point</p>
+        <div id="pt">
+          <label for="4pts"><input class="apoint" type="radio" required value="4" name="point" id="4pts">4
+            Points</label>
+          <label for="5pts"><input class="apoint" type="radio" required value="5" name="point" id="5pts">5
+            Points</label>
+          <label for="7pts"><input class="apoint" type="radio" required value="7" name="point" id="7pts">7
+            Points</label>
+        </div>
+
+      </fieldset>
+
+      <fieldset id="name">
+        <legend>Full Name</legend>
+        <label for="fname"><input type="text" class="name" required placeholder="First Name" id="fname"
+            name="fname" /></label>
+        <label for="mname"><input type="text" class="name" required name="mname" id="mname"
+            placeholder="Middle Name" /></label>
+        <label for="lname"><input type="text" class="name" required name="lname" id="lname"
+            placeholder="Last Name" /></label>
+      </fieldset>
+
+      <fieldset id="ft">
+        <label for="faculty">
+          <p>Faculty</p>
+          <input type="text" name="faculty" required id="faculty" placeholder="Enter your faculty" />
+        </label>
+
+        <label for="department">
+          <p>Department</p>
+          <input type="text" name="department" required id="department" placeholder="Enter your department" />
+        </label>
+      </fieldset>
+
+      <fieldset id="mt">
+        <label for="matric">
+          <p>Matric No</p>
+          <input type="text" name="matric" required id="matric" placeholder="231000" />
+        </label>
+
+        <label for="level">
+          <p>Level</p>
+          <select name="level" required id="level">
+            <option value="">Select your level</option>
+            <option value="100">100</option>
+            <option value="200">200</option>
+            <option value="300">300</option>
+            <option value="400">400</option>
+            <option value="500">500</option>
+            <option value="600">600</option>
+            <option value="700">700</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset id="ss">
+        <label for="session">
+          <p>Session</p>
+          <input type="text" required name="level" id="session" placeholder="2022/2023" />
+        </label>
+
+        <label for="semester">
+          <p>Semester</p>
+          <select name="semester" required id="semester">
+            <option value="">Which semester are you?</option>
+            <option value="1">First</option>
+            <option value="2">Second</option>
+          </select>
+        </label>
+      </fieldset>
+      <button type="submit" id="next" value="submit">Next &ThinSpace;<i class="material-icons">skip_next</i></button>
+    </form>
+  </div>
+
+  <script src="cgpa.js"></script>
+</body>
+
+</html>

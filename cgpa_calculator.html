@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGPA Calculator</title>
+    <meta name="keywords" content="cgpa, aggregate, result" />
+    <meta name="description" content="CGPA Calculator" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <h1>CGPA Calculator</h1>
+        <form action="" method="get">
+            <div id="courses">
+                <fieldset>
+
+                    <legend>Course Details</legend>
+                    <div id="cname">
+                        <label for="code"><input type="text" required class="cname" name="code" id="code"
+                                placeholder="Enter Course Code" /></label>
+                        <label for="ctitle"><input type="text" required class="cname" name="ctitle" id="ctitle"
+                                placeholder="Course title" /></label>
+                    </div>
+                    <div id="cdetails">
+                        <label for="unit">
+                            <select name="unit" id="unit" required>
+                                <option value="">Unit</option>
+                                <option value="1" id="u1">1</option>
+                                <option value="2" id="u2">2</option>
+                                <option value="3" id="u3">3</option>
+                                <option value="4" id="u4">4</option>
+                                <option value="5" id="u5">5</option>
+                                <option value="6" id="u6">6</option>
+                                <option value="7" id="u7">7</option>
+                                <option value="8" id="u8">8</option>
+                            </select>
+                        </label>
+                        <label for="pscore">
+                            <select name="pscore" id="pscore" required>
+                                <option value="">Point Scored</option>
+                                <option value="1" id="p1">1</option>
+                                <option value="2" id="p2">2</option>
+                                <option value="3" id="p3">3</option>
+                                <option value="4" id="p4">4</option>
+                                <option value="5" id="p5">5</option>
+                                <option value="6" id="p6">6</option>
+                                <option value="7" id="p7">7</option>
+                                <option value="8" id="p8">8</option>
+                            </select></label>
+                        <label for="score"><input type="text" readonly name="score" id="score"
+                                placeholder="Point Value" /></label>
+                    </div>
+                    <button type="submit" value="submit" id="add">Add &ThinSpace;<i
+                            class="material-icons">add_box</i></button>
+                    <p>
+                        <i>Click Add button after input the course details.</i>
+                    </p>
+                </fieldset>
+            </div>
+        </form>
+        <div id="printinfo">
+        </div>
+        <div id="addcourse">
+            <table>
+                <tr>
+                    <th>S/N</th>
+                    <th>Course Code</th>
+                    <th>Course Title</th>
+                    <th>Course Unit</th>
+                    <th>Point Scored</th>
+                    <th>Point Value</th>
+                </tr>
+                <tr class="display">
+                    <td id="s/n"></td>
+                    <td id="tcc"></td>
+                    <td id="tct"></td>
+                    <td id="tcu"></td>
+                    <td id="ps"></td>
+                    <td id=""></td>
+                </tr>
+                <tfoot style="font-weight: bold;">
+                    <td colspan="5">Total</td>
+                    <td id="cgpa">CGPA</td>
+                </tfoot>
+            </table>
+        </div>
+        <div id="btn">
+            <button type="button" id="calc">Calculate &ThinSpace; <i class="material-icons">computer</i></button>
+            <button type="button" id="print">Print &ThinSpace;<i class="material-icons">print </i></button>
+            <button type="reset" id="reset"><a href="index.html">Restart &ThinSpace; <i
+                        class="material-icons">settings_backup_restore</i></a></button>
+        </div>
+    </div>
+    <script src="cgpa.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container {
+  background-color: white;
+  background-size: cover;
+  width: 620px;
+  padding: 10px;
+  height: 820px;
+  margin: 100px auto 100px auto;
+  border-radius: 10px;
+  border-color: black;
+  border-style: solid;
+}
+
+h1 {
+  text-align: center;
+}
+
+fieldset {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  outline-color: lightgray;
+}
+
+input,
+select {
+  border-radius: 4px;
+  height: 35px;
+}
+
+input:focus {
+  background-color: rgb(243, 242, 241);
+}
+
+legend {
+  font-weight: bold;
+}
+
+#institution {
+  width: 100%;
+}
+
+#pt {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 32% 32% 32%;
+  grid-gap: 2% 2%;
+}
+
+#name {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 32% 32% 32%;
+  grid-gap: 2% 2%;
+}
+
+.name {
+  width: 100%;
+}
+
+#ft {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 50% 50%;
+  grid-gap: 2%;
+}
+
+#ft input {
+  width: 96%;
+}
+
+#mt {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+}
+
+#ss {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+}
+
+button {
+  width: 120px;
+  height: 35px;
+  font-size: 15px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  vertical-align: middle;
+  padding-top: 5px;
+}
+
+#next {
+  float: inline-end;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+i {
+  vertical-align: middle;
+  display: inline;
+}
+
+#cname {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 100%;
+  margin-bottom: 20px;
+  grid-gap: 2%;
+}
+
+.cname {
+  width: 96%;
+}
+
+#cdetails {
+  display: grid;
+  grid-template-columns: 32% 39% 32%;
+  grid-template-rows: 100%;
+  margin-bottom: 20px;
+}
+
+#add {
+  float: inline-end;
+}
+
+#btn {
+  display: grid;
+  grid-template-columns: 38% 38% 10%;
+  grid-template-rows: 100%;
+  margin-top: 20px;
+}
